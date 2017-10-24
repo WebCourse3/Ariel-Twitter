@@ -1,0 +1,29 @@
+img.avatar {
+    width: 60px;
+    height: 60px;
+}
+
+label {
+    display: block;
+    margin: 1em;
+}
+
+.button {
+    border-radius: 50%;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+}
+nav a {
+    color: white;
+}
+
+.navbar-static-top {
+    padding-right: 1em;
+}
+
+.tweet {
+    margin: 1em;
+}
