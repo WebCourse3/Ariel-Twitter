@@ -27,3 +27,11 @@ nav a {
 .tweet {
     margin: 1em;
 }
+
+.users {
+    margin-left: 1em;
+}
+
+.user {
+    display: flex;
+}

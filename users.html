@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="he">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Users</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <nav class="navbar navbar-static-top">
         <a class="navbar-brand" href="index.html">OfekTwitter</a>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="users.html">Users</a></li>
-            <li><a href="sign-up.html">Sign Up</a></li>
-            <li><a href="sign-in.html">Sign In</a></li>
+            <li>
+                <a href="users.html">Users</a>
+            </li>
+            <li>
+                <a href="sign-up.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="sign-in.html">Sign In</a>
+            </li>
         </ul>
     </nav>
-            
-    <label>Filter by <input type="text" name="userNameFilter" id="userNameFilter" placeholder="user name"> <input type="button" value="ok"></label>
-    <table>
-        <tr>
-            <th>Avatar</th>
-            <th>User Name</th>
-            <th>Follow</th>
-        </tr>
-        <tr>
-            <td><img src="images/avatar.jpg" alt="avatar" class="avatar"></td>
-            <td>User1</td>
-            <td><input type="button" value="follow"></td>
-        </tr>
-        <tr>
-            <td><img src="images/avatar.jpg" alt="avatar" class="avatar"></td>
-            <td>User2</td>
-            <td><input type="button" value="follow"></td>
-        </tr>
-        <tr>
-            <td><img src="images/avatar.jpg" alt="avatar" class="avatar"></td>
-            <td>User3</td>
-            <td><input type="button" value="follow"></td>
-        </tr>
-    </table>
+
+    <label>Filter by
+        <input type="text" name="userNameFilter" id="userNameFilter" placeholder="user name">
+        <input type="button" value="ok">
+    </label>
+    <div class="users">
+        <table>
+            <tr>
+                <th>Avatar</th>
+                <th>User Name</th>
+                <th>Follow</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/avatar.jpg" alt="avatar" class="avatar">
+                </td>
+                <td>User1</td>
+                <td>
+                    <input type="button" value="follow">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/avatar.jpg" alt="avatar" class="avatar">
+                </td>
+                <td>User2</td>
+                <td>
+                    <input type="button" value="follow">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/avatar.jpg" alt="avatar" class="avatar">
+                </td>
+                <td>User3</td>
+                <td>
+                    <input type="button" value="follow">
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
