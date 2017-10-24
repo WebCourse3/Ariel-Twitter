@@ -5,7 +5,6 @@ img.avatar {
 
 label {
     display: block;
-    margin: 1em;
 }
 
 .button {
@@ -24,14 +23,21 @@ nav a {
     padding-right: 1em;
 }
 
-.tweet {
-    margin: 1em;
-}
-
 .users {
-    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
 .user {
     display: flex;
+    margin: 1px;
+    flex-direction: column;
+}
+
+.user > label {
+    text-align: center;
+}
+
+.usersPage {
+    margin: 1em;
 }
