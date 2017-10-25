@@ -1,54 +1,14 @@
-img.avatar {
-    width: 60px;
-    height: 60px;
-}
-
 label {
     display: block;
 }
 
-.button {
-    border-radius: 50%;
-}
-
-nav {
-    background-color: blue;
-    color: white;
-}
-nav a {
-    color: white;
-}
-
-.navbar-static-top {
-    padding-right: 1em;
-}
-
-.users {
-    display: flex;
-    flex-direction: row;
-}
-
 .user {
-    display: flex;
-    margin: 1px;
-    flex-direction: column;
-}
-
-.user > label {
-    text-align: center;
-}
-
-.usersPage {
-    margin: 1em;
-}
-
-.mainPage {
-    margin: 1em;
+    padding: 1px;
 }
 
 .tweet {
     display: flex;
-    width: 18em;
+    width: 20%;
     margin: 1em;
     flex-direction: row;
 }

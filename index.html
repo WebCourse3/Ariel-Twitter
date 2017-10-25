@@ -12,26 +12,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-static-top">
-        <a class="navbar-brand" href="index.html">OfekTwitter</a>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="users.html">Users</a>
-            </li>
-            <li>
-                <a href="sign-up.html">Sign Up</a>
-            </li>
-            <li>
-                <a href="sign-in.html">Sign In</a>
-            </li>
-        </ul>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">OfekTwitter</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+                <li>
+                    <a href="sign-in.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="mainPage">
-        <label>
+    <div class="container">
+        <div>
             <textarea name="tweetText" id="tweetText" cols="80" rows="3" placeholder="tweet text.."></textarea>
-            <input class="button" type="submit" value="publish">
-        </label>
+            <input class="btn btn-primary" type="submit" value="publish">
+        </div>
         <section class="tweets-section">
             <div class="tweet">
                 <div class="tweeter-avatar">
