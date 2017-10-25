@@ -51,9 +51,11 @@ createUserElement = (user) => {
         if (followElement.value === 'follow') {
             followElement.value = 'unfollow'
             following.push(user.id);
+            refreshPage();
         } else {
             followElement.value = 'follow'
             following.splice(following.indexOf(user.id), 1);
+            refreshPage();
         }
     }
     userElement.appendChild(avatarElement);
@@ -72,6 +74,28 @@ filter = text => {
     loadUsers(filteredUsers);
 }
 
-window.onload = function() {
+findById = (users, id) => {
+    users.id === id;
+}
+
+loadFollowingUsers = (followingToRender) => {
+    const userFollowingElement = document.getElementById('following');
+    userFollowingElement.innerHTML = '';
+    for (const id of followingToRender) {
+        for (const user of users) {
+            if (user.id === id) {
+                const element = createUserElement(user);
+                userFollowingElement.appendChild(element);
+            }
+        }
+    }
+}
+
+refreshPage = () => {
     loadUsers(users);
+    loadFollowingUsers(following);
+}
+
+window.onload = function() {
+    refreshPage();
 };
