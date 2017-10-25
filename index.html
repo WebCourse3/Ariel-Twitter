@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -34,45 +35,17 @@
 
     <div class="container">
         <div>
-            <!-- <textarea name="tweetText" id="tweetText" cols="80" rows="3" placeholder="tweet text.."></textarea> -->
-            <input class="form-control">
-            <input class="btn btn-primary" type="submit" value="publish">
+            <input id="tweet-text" class="form-control">
+            <input class="btn btn-primary" type="submit" value="publish" onclick="tweet(document.getElementById('tweet-text').value)">
         </div>
-        <section class="tweets-section">
+        <section id="tweets-section" class="tweets-section">
+            <!-- Irellevant code good for angular in future -->
             <div class="tweet">
                 <div class="tweeter-avatar">
                     <img src="images/avatar.png" alt="avatar" class="avatar">
                 </div>
                 <div class="tweeter-username">User1 says:</div>
                 <div class="tweet-text">some tweet text</div>
-            </div>
-            <div class="tweet">
-                <div class="tweeter-avatar">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                </div>
-                <div class="tweeter-username">User2 says:</div>
-                <div class="tweet-text">some other tweet text</div>
-            </div>
-            <div class="tweet">
-                <div class="tweeter-avatar">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                </div>
-                <div class="tweeter-username">User3 says:</div>
-                <div class="tweet-text">some completly different tweet text</div>
-            </div>
-            <div class="tweet">
-                <div class="tweeter-avatar">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                </div>
-                <div class="tweeter-username">User4 says:</div>
-                <div class="tweet-text">tweet text that was never seen before</div>
-            </div>
-            <div class="tweet">
-                <div class="tweeter-avatar">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                </div>
-                <div class="tweeter-username">User5 says:</div>
-                <div class="tweet-text">the most uniqe tweet text ever</div>
             </div>
         </section>
     </div>
