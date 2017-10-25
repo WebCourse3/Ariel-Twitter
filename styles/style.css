@@ -7,39 +7,17 @@ label {
     display: block;
 }
 
-.button {
-    border-radius: 50%;
-}
-
-nav {
+.navbar-default {
     background-color: blue;
     color: white;
 }
-nav a {
+
+.navbar-default .navbar-brand {
     color: white;
 }
 
-.navbar-static-top {
-    padding-right: 1em;
-}
-
-.users {
-    display: flex;
-    flex-direction: row;
-}
-
-.user {
-    display: flex;
-    margin: 1px;
-    flex-direction: column;
-}
-
-.user > label {
-    text-align: center;
-}
-
-.usersPage {
-    margin: 1em;
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
 
 .mainPage {

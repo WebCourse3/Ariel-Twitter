@@ -18,11 +18,17 @@
         </ul>
     </nav>
 
-    <form class="form">
-        <label>Username <input type="text" name="username" id="username"></label>
-        <label>Password <input type="password" name="password" id="password"></label>
-        <label>Confirm Password <input type="password" name="confirmPassword" id="confirmPassword"></label>
-        <input class="button" type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Sign Up</h2>
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <label for="inputConfirmPassword" class="sr-only">Confirm Passowrd</label>
+            <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+        </form>
+    </div>
 </body>
 </html>

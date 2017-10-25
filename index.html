@@ -12,26 +12,47 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-static-top">
-        <a class="navbar-brand" href="index.html">OfekTwitter</a>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="users.html">Users</a>
-            </li>
-            <li>
-                <a href="sign-up.html">Sign Up</a>
-            </li>
-            <li>
-                <a href="sign-in.html">Sign In</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+                <li>
+                    <a href="sign-in.html">Sign In</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
+    <!-- <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">Sign Up</a>
+                </li>
+                <li>
+                    <a href="sign-in.html">Sign In</a>
+                </li>
+            </ul> -->
 
     <div class="mainPage">
-        <label>
+        <div>
             <textarea name="tweetText" id="tweetText" cols="80" rows="3" placeholder="tweet text.."></textarea>
-            <input class="button" type="submit" value="publish">
-        </label>
+            <input class="btn btn-primary" type="submit" value="publish">
+        </div>
         <section class="tweets-section">
             <div class="tweet">
                 <div class="tweeter-avatar">
