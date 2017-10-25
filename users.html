@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/users.js"></script>
 </head>
 
 <body>
@@ -34,37 +35,10 @@
 
     <div class="container">
         <div class="row text-center">
-            <input type="text" name="userNameFilter" id="userNameFilter" placeholder="user name">
+            <input type="text" name="userNameFilter" id="userNameFilter" placeholder="user name" oninput="filter(this.value)">
             <input class="btn btn-primary" type="button" value="search">
         </div>
-        <div class="users">
-            <div class="row text-center">
-                <div class="user col-xs-6 col-md-4">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                    <label>User1</label>
-                    <input type="button" value="follow">
-                </div>
-                <div class="user col-xs-6 col-md-4">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                    <label>User2</label>
-                    <input type="button" value="follow">
-                </div>
-                <div class="user col-xs-6 col-md-4">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                    <label>User3</label>
-                    <input type="button" value="follow">
-                </div>
-                <div class="user col-xs-6 col-md-4">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                    <label>User4</label>
-                    <input type="button" value="follow">
-                </div>
-                <div class="user col-xs-6 col-md-4">
-                    <img src="images/avatar.png" alt="avatar" class="avatar">
-                    <label>User5</label>
-                    <input type="button" value="follow">
-                </div>
-            </div>
+        <div id="users" class="users row text-center">
         </div>
     </div>
 </body>
