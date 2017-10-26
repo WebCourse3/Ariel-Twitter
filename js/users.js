@@ -20,6 +20,8 @@ const following = [
     1
 ];
 
+let filteredUsersGlobal = users;
+
 loadUsers = (userToRender) => {
     const userElement = document.getElementById('users');
     userElement.innerHTML = '';
@@ -71,6 +73,7 @@ filter = text => {
             filteredUsers.push(user);
         }
     }
+    filteredUsersGlobal = filteredUsers;
     loadUsers(filteredUsers);
 }
 
@@ -92,7 +95,7 @@ loadFollowingUsers = (followingToRender) => {
 }
 
 refreshPage = () => {
-    loadUsers(users);
+    loadUsers(filteredUsersGlobal);
     loadFollowingUsers(following);
 }
 
