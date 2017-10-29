@@ -14,9 +14,15 @@ const users = [
         username: 'Benjamin',
         avatar: 'images/avatar.png'
     },
+    {
+        id: 4,
+        username: 'Hole',
+        avatar: 'images/avatar.png'
+    },
+
 ];
 
-const following = [
+const followingIds = [
     1
 ];
 
@@ -44,46 +50,49 @@ createUserElement = (user) => {
     labelElement.innerText = user.username;
     const followElement = document.createElement('input');
     followElement.setAttribute('type', 'button');
-    if (following.includes(user.id)) {
+
+    if (followingIds.includes(user.id)) {
         followElement.setAttribute('value', 'unfollow');
     } else {
         followElement.setAttribute('value', 'follow');
     }
+
     followElement.onclick = () => {
         if (followElement.value === 'follow') {
             followElement.value = 'unfollow'
-            following.push(user.id);
+            followingIds.push(user.id);
             refreshPage();
         } else {
             followElement.value = 'follow'
-            following.splice(following.indexOf(user.id), 1);
+            followingIds.splice(followingIds.indexOf(user.id), 1);
             refreshPage();
         }
     }
+
     userElement.appendChild(avatarElement);
     userElement.appendChild(labelElement);
     userElement.appendChild(followElement);
+
     return userElement;
 }
 
 filter = text => {
     const filteredUsers = [];
+    
     for (const user of users) {
         if (user.username.toLowerCase().includes(text.toLowerCase())) {
             filteredUsers.push(user);
         }
     }
+
     filteredUsersGlobal = filteredUsers;
     loadUsers(filteredUsers);
-}
-
-findById = (users, id) => {
-    users.id === id;
 }
 
 loadFollowingUsers = (followingToRender) => {
     const userFollowingElement = document.getElementById('following');
     userFollowingElement.innerHTML = '';
+
     for (const id of followingToRender) {
         for (const user of users) {
             if (user.id === id) {
@@ -96,7 +105,7 @@ loadFollowingUsers = (followingToRender) => {
 
 refreshPage = () => {
     loadUsers(filteredUsersGlobal);
-    loadFollowingUsers(following);
+    loadFollowingUsers(followingIds);
 }
 
 window.onload = function() {

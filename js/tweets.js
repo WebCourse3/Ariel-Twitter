@@ -9,7 +9,9 @@ function tweet(text) {
         text,
         username: 'Ariel',
     }
+    
     tweets.push(tweet);
+    
     clearTweetText();
     loadTweets();
 }
@@ -37,11 +39,13 @@ function createTweetElement(tweet) {
     tweetElement.appendChild(tweetAvatar);
     tweetElement.appendChild(tweetUserName);
     tweetElement.appendChild(tweetText);
+    
     return tweetElement;
 }
 
 function loadTweets() {
     document.getElementById('tweets-section').innerHTML = '';
+
     for (const tweet of tweets) {
         const element = createTweetElement(tweet);
         document.getElementById('tweets-section').appendChild(element);
