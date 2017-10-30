@@ -10,9 +10,11 @@
     width: 80%;
     border: 1px solid;
     margin: 0 auto;
+    color: white;
 }
 
 .alert-container {
     width: 100%;
     margin: 1%;
+    color: ivory;
 }

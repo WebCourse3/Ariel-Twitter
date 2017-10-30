@@ -3,6 +3,7 @@
 
         let passed = true;
         let testGroupDiv = document.createElement('div');
+        testGroupDiv.innerHTML += `<h3>${name}</h3>`
         testGroupDiv.setAttribute('class', 'test-group alert-container');
 
         assert = (value, name) => {
@@ -26,7 +27,7 @@
         assert(true, 'test 3');
     });
 
-    test_group('test group 1', () => {
+    test_group('test group 2', () => {
         assert(true, 'test 1');
         assert(false, 'test 2');
         assert(true, 'test 3');
