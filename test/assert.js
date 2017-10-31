@@ -32,4 +32,11 @@
         assert(false, 'test 2');
         assert(true, 'test 3');
     });
+
+    test_group("OfekQuery", function() {
+        assert($(".test-group").elements.length === 3, "class selector");
+        assert($("#test-groups-id").elements.length === 1, "id selector");
+        assert($("div .test-groups").elements.length === 1, "element > class");
+        assert($("div .test-groups .test-group").elements.length === 3, "element > class > class");
+    });
 })();
